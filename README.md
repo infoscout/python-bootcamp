@@ -131,9 +131,9 @@ However the more pythonic way of string formatting would be using named placehol
 Here would be an example of how to format a float to 4 decimal places
 ```
 >>> pi = 3.14159265359
->>> a = "Hooray for {:.4f}".format(pi)
+>>> a = "Hooray for {pi:.4f}".format(pi=pi)
 >>> a
-'Hooray for pi, 3.1416'
+'Hooray for 3.1416'
 >>>
 ```
 ## Lists
