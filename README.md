@@ -158,5 +158,181 @@ Here are a few ways to create lists
 ## List Methods
 Similar to string methods, there are a number of different methods you can call on an instance of a list
 
+```
+>>> list = [20, 5, 9]
+>>> list
+[20, 5, 9]
+>>> list.append(50)
+>>> list
+[20, 5, 9, 50]
+>>> a = list.pop()
+>>> a
+50
+>>> list
+[20, 5, 9]
+>>>
+>>> list1 = [4,5,6]
+>>> list2 = [10, 20, 30]
+>>> list1 + list2
+[4, 5, 6, 10, 20, 30]
+>>>
+```
+
+## Iterating through Iterables
+How do we look at each element in the list sequentially?
+
+Iterating through iterables is a very common pattern in software development and we use the `FOR` and `IN`
+clauses to look at each element in any type of iterable.
+
+The general syntax is `for var in list`. Here are a few examples:
+
+```
+>>> numbers = [9, 235, 6, 0, 4]
+>>> for number in numbers:
+...  print number
+...
+9
+235
+6
+0
+4
+>>>
+>>> name = 'InfoScout'
+>>> for c in name:
+...  print c
+...
+I
+n
+f
+o
+S
+c
+o
+u
+t
+>>>
+>>> total = 0
+>>> nums = [10, 20, 30]
+>>> for num in nums:
+...  total += num
+...
+>>> print total
+60
+>>>
+```
+
 ## Sorting Iterables
+The easy way to sort a list is using the `sorted` construct.
+
+```
+>>> l = [12, 2, 99, 4, 8, 14]
+>>> sorted(l)
+[2, 4, 8, 12, 14, 99]
+>>>
+```
+
+The sorted function also takes a handy optional parameter, `reverse`, that will sort an iterable in reverse
+```
+>>> l = ['l', 'p', 'a', 'c', 'g', 'b', 'm']
+>>> sorted(l, reverse=True)
+['p', 'm', 'l', 'g', 'c', 'b', 'a']
+>>>
+```
+
+However what if you would like to perform a more complex sort?
+
+Sorting takes an optional `key=` parameter that allows one to define custom sorting. The key function takes in 1 value
+and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
+
+An example
+```
+>>> # sort by element length
+>>> l = ['san francisco', 'boston', 'chicago', 'new york city']
+>>> sorted(l, key=len)
+['boston', 'chicago', 'san francisco', 'new york city']
+>>>
+```
+It is important to note that the `key=` parameter can take any function as long as that function returns 1 value
+
+So how would we sort a list of strings by their last character in ascending order?
+```
+>>> l = ['jsnl', 'ahxb', 'nla', 'uownk']
+>>> def last_char(s):
+...  return s[-1]
+...
+>>> sorted(l, key=last_char)
+['nla', 'ahxb', 'uownk', 'jsnl']
+>>>
+```
+
+## Dictionaries
+Dictionaries are a very common and powerful data structure in software. They are a key/value hash table
+that allows for extremely fast lookup and insertion.
+
+The contents of a dictionary can be written as key:value pairs with braces `{}` and brackets `[]`.
+
+Strings, numbers, and tuples can be used for keys. Values accept any data type.
+
+Here are a few examples for creating a dictionary:
+
+```
+>>> d = {}
+>>> print d
+{}
+>>> d['fname'] = 'Dana'
+>>> d['lname'] = 'Ford'
+>>> print d
+{'lname': 'Ford', 'fname': 'Dana'}
+>>>
+>>> z = {1: ['hello', 'word'], 9: ['abc']}
+>>> print z
+{1: ['hello', 'word'], 9: ['abc']}
+>>>
+```
+To look up or set a value use brackets. Note that if the key you are looking for does not exist
+then a `KeyError` exception will get raised
+```
+>>> d
+{'lname': 'Ford', 'fname': 'Dana'}
+>>> d['lname']
+'Ford'
+>>>
+>>> d['city']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'city'
+>>> d['city'] = 'San Francisco'
+>>> d
+{'lname': 'Ford', 'city': 'San Francisco', 'fname': 'Dana'}
+```
+Dictionaries are like lists in that they are both iterables however dictionaries do not store items
+in order. Key/Value access is non-deterministic.
+
+But like lists you can iterate through them. Since dictionaries have key and values you can iterate
+though the keys, values, or both (items).
+
+```
+>>> d
+{'lname': 'Ford', 'city': 'San Francisco', 'fname': 'Dana'}
+>>> for key in d.keys():
+...  print key
+...
+lname
+city
+fname
+>>> for value in d.values():
+...  print value
+...
+Ford
+San Francisco
+Dana
+>>> for key, value in d.items():
+...  print "Key: {key}. Value: {value}".format(key=key, value=value)
+...
+Key: lname. Value: Ford
+Key: city. Value: San Francisco
+Key: fname. Value: Dana
+>>>
+```
+## Files
 Fill in
