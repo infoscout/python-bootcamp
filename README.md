@@ -334,6 +334,7 @@ Key: city. Value: San Francisco
 Key: fname. Value: Dana
 >>>
 ```
+
 ## Sets
 A set is a data structure that holds an unordered collection of objects with no duplicates. A basic use case of
 when to use a set would be removing duplicates in a list.
@@ -354,3 +355,31 @@ set([1, 2, 3])
 set([1, 2, 3, 4])
 >>>
 ```
+
+## Tuples
+Tuples are another data structure (iterable) that holds a stream of values.
+
+A tuple uses the parenthesis `()` seperated by commas
+```
+>>> t = (1,2,3)
+>>> t
+(1, 2, 3)
+>>> type(t)
+<type 'tuple'>
+>>> t[0]
+1
+>>>
+```
+Though tuples may seem similar to lists, they are often used in different situations and for different purposes.
+Tuples are immutable and usually contain a sequence of values that are different from each other.
+```
+>>> t = (10, 20, 30)
+>>> t[0]
+10
+>>> t[0] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>>
+```
+
