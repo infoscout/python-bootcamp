@@ -369,6 +369,8 @@ A tuple uses the parenthesis `()` seperated by commas
 >>> t[0]
 1
 >>>
+>>> len(t)
+3
 ```
 Though tuples may seem similar to lists, they are often used in different situations and for different purposes.
 Tuples are immutable and usually contain a sequence of values that are different from each other.
