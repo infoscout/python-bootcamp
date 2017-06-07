@@ -385,3 +385,22 @@ TypeError: 'tuple' object does not support item assignment
 >>>
 ```
 
+## The Python Standard Library
+[The Python Standard Library](https://docs.python.org/2/library/) is an extensive library that is distributed with every version of python. It offers a wide
+range of utilities, components, and frameworks. It also contains several modules that provide standardized solutions
+for many problems that occur in everyday programming.
+
+Here are some of the most common libraries that are available:
+```
+>>> import datetime
+>>> import re
+>>> import math
+>>> import os
+>>> import sys
+```
+
+## PyPI - The Python Package Index
+[The Python Package Index (PyPI)](https://pypi.python.org/pypi) is the official third party software repository for Python.
+It currently has over 100,000 projects is the central location for getting any library.
+
+
