@@ -403,4 +403,11 @@ Here are some of the most common libraries that are available:
 [The Python Package Index (PyPI)](https://pypi.python.org/pypi) is the official third party software repository for Python.
 It currently has over 100,000 projects is the central location for getting any library.
 
+Here are some of the most common libraries that are available:
+```
+>>> import requests
+>>> import boto
+>>> import django
+>>> import mock
+
 
