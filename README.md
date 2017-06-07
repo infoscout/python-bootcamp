@@ -334,5 +334,23 @@ Key: city. Value: San Francisco
 Key: fname. Value: Dana
 >>>
 ```
-## Files
-Fill in
+## Sets
+A set is a data structure that holds an unordered collection of objects with no duplicates. A basic use case of
+when to use a set would be removing duplicates in a list.
+
+The syntax for sets use parenthesis `()`
+
+```
+>>> s1 = set()
+>>> s1
+set([])
+>>>
+>>> s2 = set([1,2,3])
+>>> s2
+set([1, 2, 3])
+>>>
+>>> s3 = set([1,2,3,4,4,4,4])
+>>> s3
+set([1, 2, 3, 4])
+>>>
+```
