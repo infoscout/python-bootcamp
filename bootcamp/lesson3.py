@@ -20,11 +20,6 @@ def dict_profile(fname, lname, age):
     pass
 
 
-# Question 3
-# ----------
-# Fill in: datetime module
-
-
 def main():
     print "\nRunning uniques_sorted function..."
     test_helper(uniques_sorted([1, 2, 3]), [1, 2, 3])
