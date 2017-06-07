@@ -7,8 +7,7 @@ from core import test_helper
 
 
 def sayings(word):
-    # Write code here
-    pass
+    return "Open the pod bay doors, {word}.".format(word=word)
 
 # Question 2
 # ----------
@@ -20,9 +19,10 @@ def sayings(word):
 
 
 def donuts(cnt):
-    # Write code here
-    pass
-
+    if cnt < 10:
+        return "Number of donuts: {cnt}".format(cnt=cnt)
+    else:
+        return "Number of donuts: many"
 
 # Question 3
 # -----------
@@ -33,8 +33,10 @@ def donuts(cnt):
 
 
 def dinner_calculator(meal_cost, pct_tip):
-    # Write code here
-    pass
+    sales_tax = 0.055
+    meal_cost = meal_cost + meal_cost * sales_tax
+    total = meal_cost + meal_cost * pct_tip
+    return "${total:.2f}".format(total=total)
 
 
 def main():
