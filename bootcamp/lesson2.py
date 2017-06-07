@@ -7,7 +7,11 @@ from core import test_helper
 
 
 def match_ends(words):
-    pass
+    total = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            total += 1
+    return total
 
 # Question 2
 # ----------
@@ -17,8 +21,16 @@ def match_ends(words):
 
 
 def sort_x(words):
-    # Write code here
-    pass
+    x_elements = []
+    other_elements = []
+
+    for word in words:
+        if word[0] == 'x':
+            x_elements.append(word)
+        else:
+            other_elements.append(word)
+
+    return sorted(x_elements) + sorted(other_elements)
 
 
 # Question 3
@@ -26,8 +38,10 @@ def sort_x(words):
 # Given a list of numbers write a function to sum every element in the list. Return the sum
 #
 def sum_elements(nums):
-    # Write code here
-    pass
+    s = 0
+    for num in nums:
+        s += num
+    return s
 
 
 def main():
