@@ -5,8 +5,7 @@ from core import test_helper
 # ----------
 # Given a list of numbers return a sorted list with only the unique elements.
 def uniques_sorted(nums):
-    # Write code here
-    pass
+    return sorted(list(set(nums)))
 
 
 # Question 2
@@ -16,8 +15,11 @@ def uniques_sorted(nums):
 # The values will be the function parameters. The first name and last name
 # should be title case
 def dict_profile(fname, lname, age):
-    # Write code here
-    pass
+    return {
+        'fname': fname.title(),
+        'lname': lname.title(),
+        'age': age
+    }
 
 
 def main():
