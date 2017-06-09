@@ -410,4 +410,8 @@ Here are some of the most common libraries that are available:
 >>> import django
 >>> import mock
 
+## The csv module
+The `csv` module implements classes to read and write tabular data in CSV format. The csv module’s
+`reader` and `writer` objects read and write sequences.
+
 
