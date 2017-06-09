@@ -385,6 +385,27 @@ TypeError: 'tuple' object does not support item assignment
 >>>
 ```
 
+One final note on tuples.
+
+Python has a powerful feature that is known as "tuple unpacking" that allows a developer to unpack
+all of the elements of a tuple in a single line.
+```
+>>> t = ('San Francisco', 'California', 'United States')
+>>> print t
+('San Francisco', 'California', 'United States')
+>>>
+>>> city, state, country = t
+>>> print city
+San Francisco
+>>> print state
+California
+>>> print country
+United States
+>>>
+```
+This does the equivalent of seven assignment statements, all on one easy line. One requirement is that
+the number of variables on the left must match the number of elements in the tuple.
+
 ## The Python Standard Library
 [The Python Standard Library](https://docs.python.org/2/library/) is an extensive library that is distributed with every version of python. It offers a wide
 range of utilities, components, and frameworks. It also contains several modules that provide standardized solutions
