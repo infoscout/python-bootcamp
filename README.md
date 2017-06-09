@@ -409,9 +409,23 @@ Here are some of the most common libraries that are available:
 >>> import boto
 >>> import django
 >>> import mock
+```
 
 ## The csv module
 The `csv` module implements classes to read and write tabular data in CSV format. The csv module’s
 `reader` and `writer` objects read and write sequences.
 
+```python
+def read_movies():
+    import csv
+    import datetime
+    f = '/Users/df/isc/python-bootcamp-pv/data/movies.csv'
+    with open(f, 'r') as csvreader:
+        reader = csv.reader(csvreader, delimiter=',')
+        for row in reader:
+            year_str = row[-1]
+            dt = datetime.datetime.strptime(year_str, '%Y')
+            print "Type = {t}. Value = {v}".format(t=type(dt), v=dt)
+```
 
+The reader object  will iterate over lines in the given csvfile
