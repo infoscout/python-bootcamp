@@ -39,7 +39,7 @@ def bigdata():
             if reg_month in reg_dict:
                 reg_dict[reg_month] += 1
             else:
-                reg_dict[reg_month] = 0
+                reg_dict[reg_month] = 1
 
     print "\nCount by Apps\n{apps_dict}".format(apps_dict=apps_dict)
     print "\nCount by Registration Month\n{reg_dict}\n".format(reg_dict=reg_dict)
