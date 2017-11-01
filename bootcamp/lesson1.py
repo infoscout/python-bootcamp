@@ -4,10 +4,10 @@ from core import test_helper
 # Question 1
 # ----------
 # Given a string, return a string of the form "Open the pod bay doors, <string>."
-
-
 def sayings(word):
-    return "Open the pod bay doors, {word}.".format(word=word)
+    # Write code here
+    pass
+
 
 # Question 2
 # ----------
@@ -16,13 +16,10 @@ def sayings(word):
 # passed in. However, if the count is 10 or more, then use the word "many"
 # instead of the actual count. So donuts(5) returns "Number of donuts: 5" and
 # donuts(27) returns "Number of donuts: many"
-
-
 def donuts(cnt):
-    if cnt < 10:
-        return "Number of donuts: {cnt}".format(cnt=cnt)
-    else:
-        return "Number of donuts: many"
+    # Write code here
+    pass
+
 
 # Question 3
 # -----------
@@ -30,13 +27,9 @@ def donuts(cnt):
 # A 5.5% sales tax should be added to the meal cost and the tip should be
 # calculated based off that total. Return a formatted string which contains
 # dollars and cents. For example $27.52
-
-
 def dinner_calculator(meal_cost, pct_tip):
-    sales_tax = 0.055
-    meal_cost = meal_cost + meal_cost * sales_tax
-    total = meal_cost + meal_cost * pct_tip
-    return "${total:.2f}".format(total=total)
+    # Write code here
+    pass
 
 
 def main():

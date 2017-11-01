@@ -1,36 +1,23 @@
 from core import test_helper
 
+
 # Question 1
 # ----------
 # Given a list of strings, return the count of the number of strings where the string length
 # is 2 or more and the first and last chars of the string are the same.
-
-
 def match_ends(words):
-    total = 0
-    for word in words:
-        if len(word) >= 2 and word[0] == word[-1]:
-            total += 1
-    return total
+    # Write code here
+    pass
+
 
 # Question 2
 # ----------
 # Given a list of strings, return a list with the strings in sorted order,
 # except group all the strings that begin with 'x' first. Example:
 # ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-
-
 def sort_x(words):
-    x_elements = []
-    other_elements = []
-
-    for word in words:
-        if word[0] == 'x':
-            x_elements.append(word)
-        else:
-            other_elements.append(word)
-
-    return sorted(x_elements) + sorted(other_elements)
+    # Write code here
+    pass
 
 
 # Question 3
@@ -38,10 +25,8 @@ def sort_x(words):
 # Given a list of numbers write a function to sum every element in the list. Return the sum
 #
 def sum_elements(nums):
-    s = 0
-    for num in nums:
-        s += num
-    return s
+    # Write code here
+    pass
 
 
 def main():

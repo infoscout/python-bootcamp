@@ -20,29 +20,8 @@ import csv
 #    etc...
 # }
 def bigdata():
-    apps_dict = {}
-    reg_dict = {}
-    file_path = '/Users/df/isc/python-bootcamp-pv/data/users.csv'
-
-    with open(file_path, 'r') as csvreader:
-        reader = csv.reader(csvreader)
-        for row in reader:
-            user_id, verified, app_id, state, reg_str = row
-            if app_id in apps_dict:
-                apps_dict[app_id] += 1
-            else:
-                apps_dict[app_id] = 1
-
-            reg_dt = datetime.datetime.strptime(reg_str, "%Y-%m-%d %H:%M:%S")
-            reg_month = reg_dt.strftime("%b")
-
-            if reg_month in reg_dict:
-                reg_dict[reg_month] += 1
-            else:
-                reg_dict[reg_month] = 1
-
-    print "\nCount by Apps\n{apps_dict}".format(apps_dict=apps_dict)
-    print "\nCount by Registration Month\n{reg_dict}\n".format(reg_dict=reg_dict)
+    # Write code here
+    pass
 
 
 def main():
