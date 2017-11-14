@@ -7,6 +7,33 @@ $ git clone https://github.com/infoscout/python-bootcamp.git
 ```
 Next, open and add the `python-bootcamp` project to your IDE of choice. Once that is complete fire up the python interpreter and we can begin!
 
+## Indentation
+One of the most distinctive features of Python is its use of indentation to mark blocks of code. Most programming languages use certain characters or keywords to group statements
+```
+begin ... end
+do ... end
+{ ... }
+if ... fi
+```
+However Python uses a different principle, indentation, to signify code blocks.
+
+So how does this work? All statements that have the same amount of indentation (white space) to the left belong to the same block of code. Consider the following
+hypothetical program
+```
+if action == 'login':
+    print "Logging you in..."
+    print "Success!"
+else:
+    print "Doh!"
+
+print "Complete"
+```
+The first two print statements have the same indentation and therefore are part of the same code block. Each line in a code block will be executed sequentially so if `action` equals 'login' then 'Logging you in...' will print first followed by 'Success!'.
+
+Regardless of what `action` equals, 'Complete!' will be printed last because it is the final code block in the program.
+
+More formerly speaking, leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements.
+
 ## Integers
 ```
 >>> a = 42
