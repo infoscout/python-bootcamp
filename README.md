@@ -3,9 +3,9 @@ Make a new folder off your home directory and clone the GitHub repo
 ```bash
 $ cd ~
 $ mkdir isc && cd isc
-$ git clone https://github.com/infoscout/python-bootcamp-pv.git
+$ git clone https://github.com/infoscout/python-bootcamp.git
 ```
-Next, open and add the `python-bootcamp-pv` project to your IDE of choice. Once that is complete fire up the python interpreter and we can begin!
+Next, open and add the `python-bootcamp` project to your IDE of choice. Once that is complete fire up the python interpreter and we can begin!
 
 ## Integers
 ```
