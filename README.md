@@ -30,7 +30,7 @@ print "Complete"
 ```
 The first two print statements have the same indentation and therefore are part of the same code block. Each line in a code block will be executed sequentially so if `action` equals 'login' then 'Logging you in...' will print first followed by 'Success!'.
 
-Regardless of what `action` equals, 'Complete!' will be printed last because it is the final code block in the program.
+Regardless of what `action` equals, 'Complete' will be printed last because it is the final code block in the program.
 
 More formerly speaking, leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements.
 
