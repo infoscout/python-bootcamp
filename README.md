@@ -34,6 +34,36 @@ Regardless of what `action` equals, 'Complete' will be printed last because it i
 
 More formerly speaking, leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements.
 
+## Python Reserved Words
+Similar to any other programming language or application (eg C++, Java, Excel) Python has a defined list of reserved identifiers, or keywords of the language, that should not be used when creating objects, variables, attributes.
+
+The most important ones are listed here:
+```
+>>> import builtins
+>>> dir(builtins)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError',
+'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError',
+'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError',
+'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError',
+'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented',
+'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning',
+'ReferenceError', 'RuntimeError', 'RuntimeWarning', 'StandardError', 'StopIteration',
+'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True',
+'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError',
+'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError',
+'Warning', 'ZeroDivisionError', '__builtins__', '__doc__', '__file__', '__future_module__',
+'__name__', '__package__', '__path__', 'abs', 'absolute_import', 'all', 'any', 'apply',
+'ascii', 'basestring', 'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 'chr',
+'classmethod', 'cmp', 'coerce', 'compile', 'complex', 'copyright', 'credits', 'delattr',
+'dict', 'dir', 'divmod', 'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter',
+'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex',
+'id', 'input', 'int', 'intern', 'isinstance', 'issubclass', 'iter', 'len', 'license',
+'list', 'locals', 'long', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct',
+'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'raw_input', 'reduce',
+'reload', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod',
+'str', 'sum', 'super', 'sys', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
+```
+Don't get too hung up on this topic but just know that they have special meanings within the Python interpreter and should be avoided as a name when declaring your own object.
 ## Integers
 ```
 >>> a = 42
