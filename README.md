@@ -96,6 +96,29 @@ My last name is scott
 ```
 For the most part in this course you will be writing code within functions that have already been defined but don't contain any logic
 
+## Conditionals
+Conditional statements give us the ability to check conditions and change the behavior of the code/program at execution time.
+
+![String indices](http://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
+
+Nearly every program contains these conditional statements and they take the form of boolean expressions. Here is a simple example:
+```
+>>> company = 'awesome'
+>>>
+>>> if company == 'awesome':
+...    print 'I work for an awesome company'
+>>>
+```
+And here is another example that uses the common approach of `if/else` flow
+```
+>>> beers_remaining = 0
+>>> if beers_remaining > 0:
+...    print "We still have beers!"
+... else:
+...    print "The party is over, get out!"
+>>>
+```
+
 ## Integers
 ```
 >>> a = 42
