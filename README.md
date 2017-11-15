@@ -64,6 +64,38 @@ The most important ones are listed here:
 'str', 'sum', 'super', 'sys', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
 ```
 Don't get too hung up on this topic but just know that they have special meanings within the Python interpreter and should be avoided as a name when declaring your own object.
+
+## Functions (quick intro)
+Functions are a critical part of any programming language and their main purpose is to bundle a set of code.
+
+It organizes code that you may want to reuse elsewhere in your codebase or is a single action that should be contained within a block. They provide modularity for your applications and significant code reuse.
+
+The syntax for defining/creating functions uses the `def` keyword followed by the name of the function along with any optional parameters/arguments
+
+Here are a few examples for defining and calling functions
+```
+# function that takes no parameters
+>>> def shout():
+...    print "Hello InfoScouters!"
+>>>
+>>> shout()
+Hello InfoScouters!
+>>>
+```
+```
+# function that takes one parameter
+>>> def last_name(name):
+...    print "My last name is {lname}".format(lname=name)
+>>>
+>>> last_name('Sobchak')
+My last name is Sobchak
+>>>
+>>> last_name('scott')
+My last name is scott
+>>>
+```
+For the most part in this course you will be writing code within functions that have already been defined but don't contain any logic
+
 ## Integers
 ```
 >>> a = 42
