@@ -118,7 +118,14 @@ And here is another example that uses the common approach of `if/else` flow
 ...    print "The party is over, get out!"
 >>>
 ```
+## Coding Style & PEP 8
+Regardless of the language, a software engineer can write, stylize, and format code in endless ways. As such it is really important to follow standards so that all team members can easily read your code.
 
+It makes it cleaner, crisper, and easier to read and understand. Nobody likes to read text ThAt iS wRiTteN LiKe This and the same principle holds true for software development.
+
+[PEP 8](https://www.python.org/dev/peps/pep-0008/) is the standard (although not the only one) for writing `pythonic` code and it was created so python developers could adopt conventions for writing more readable code.
+
+Do I need to memorize the entire PEP 8 standard? Good news... you don't. There are plenty plugins and command line tools that will check if your code is compliant with the PEP 8 style guide, and even fix some for you.
 ## Integers
 ```
 >>> a = 42
