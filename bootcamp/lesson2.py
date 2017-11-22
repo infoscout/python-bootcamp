@@ -29,6 +29,14 @@ def sum_elements(nums):
     pass
 
 
+# Question 4
+# ----------
+# Read up on PEP8
+#
+def pep8():
+    print "Read the PEP 8 style guide! ;)"
+
+
 def main():
     print '\nRunning match_ends function...'
     test_helper(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']), 3)
