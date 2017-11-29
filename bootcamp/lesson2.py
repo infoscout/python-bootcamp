@@ -1,13 +1,17 @@
 from core import test_helper
 
-
 # Question 1
 # ----------
 # Given a list of strings, return the count of the number of strings where the string length
 # is 2 or more and the first and last chars of the string are the same.
+
+
 def match_ends(words):
-    # Write code here
-    pass
+    total = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            total += 1
+    return total
 
 
 # Question 2
@@ -15,9 +19,19 @@ def match_ends(words):
 # Given a list of strings, return a list with the strings in sorted order,
 # except group all the strings that begin with 'x' first. Example:
 # ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
+
+
 def sort_x(words):
-    # Write code here
-    pass
+    x_elements = []
+    other_elements = []
+
+    for word in words:
+        if word[0] == 'x':
+            x_elements.append(word)
+        else:
+            other_elements.append(word)
+
+    return sorted(x_elements) + sorted(other_elements)
 
 
 # Question 3
@@ -25,16 +39,7 @@ def sort_x(words):
 # Given a list of numbers write a function to sum every element in the list. Return the sum
 #
 def sum_elements(nums):
-    # Write code here
-    pass
-
-
-# Question 4
-# ----------
-# Read up on PEP8
-#
-def pep8():
-    print "Read the PEP 8 style guide! ;)"
+    return sum(nums)
 
 
 def main():
@@ -55,4 +60,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
