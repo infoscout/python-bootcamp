@@ -551,6 +551,43 @@ Here are some of the most common libraries that are available:
 >>> import mock
 ```
 
+## The requests library
+The python requests library is a 3rd party library for handling HTTP requests. It is one of the most popular libraries within the python ecosystem (13MM downloads / month) and as their moto states, it was *built for humans.*
+
+The library is easy to use because it abstracts and hides all of the lower level logic needed to build HTTP request objects. This allows the developer to focus on writing business logic and building features while not getting tied up with encoding query string parameters or form-encoding post data.
+
+So how do we make a `GET` request using the requests library?
+```
+>>> import requests
+>>> url = 'https://google.com'
+>>> r = requests.get(url=url)
+>>> print r.status_code
+200
+>>> print r.text
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head>
+<meta content="Search the world's information, including webpages, images, videos and more.
+Google has many special features to help you find exactly what you're looking for."
+name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8"
+http-equiv="Content-Type">
+<meta content="/logos/doodles/2017/celebrating-50-years-of-kids-coding-5745168905928704.3-l.png"
+itemprop="image"><meta content="Celebrating 50 years of Kids Coding" property="twitter:title">
+<meta content="Celebrating 50 years of Kids Coding #GoogleDoodle"
+property="twitter:description"><meta content="Celebrating 50 years of Kids Coding #GoogleDoodle"
+property="og:description"><meta content="summary_large_image" property="twitter:card">
+<meta content="@GoogleDoodles" property="twitter:site">
+...
+...
+>>> dir(r)
+['__attrs__', '__bool__', '__class__', '__delattr__', '__dict__', '__doc__', '__enter__',
+'__exit__', '__format__', '__getattribute__', '__getstate__', '__hash__', '__init__', '__iter__',
+'__module__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__',
+'__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_content',
+'_content_consumed', '_next', 'apparent_encoding', 'close', 'connection', 'content', 'cookies',
+'elapsed', 'encoding', 'headers', 'history', 'is_permanent_redirect', 'is_redirect',
+'iter_content', 'iter_lines', 'json', 'links', 'next', 'ok', 'raise_for_status', 'raw', 'reason',
+'request', 'status_code', 'text', 'url']
+```
+
 ## The csv module
 The `csv` module implements classes to read and write tabular data in CSV format. The csv module’s
 `reader` and `writer` objects read and write sequences.
