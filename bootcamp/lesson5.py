@@ -6,7 +6,7 @@ import csv
 # ----------
 # Using the csv data file users.csv aggregate app users as well as registration date by month. The count of app
 # users should be one dictionary while the count of registration month should be another dictionary. There will be
-# no checking or test harness so simply print your results to the console.
+# no checking or test harness so simply print your results to the console in the display_results function.
 # Example:
 # d1 = {
 #    'RECEIPT_HOG': 3325,
@@ -20,6 +20,11 @@ import csv
 #    etc...
 # }
 def bigdata():
+    # Write code here
+    pass
+
+
+def display_results(d1, d2):
     # Write code here
     pass
 
