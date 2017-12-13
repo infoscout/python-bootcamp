@@ -596,7 +596,7 @@ The `csv` module implements classes to read and write tabular data in CSV format
 def read_movies():
     import csv
     import datetime
-    f = '/Users/df/isc/python-bootcamp-pv/data/movies.csv'
+    f = '/Users/df/isc/python-bootcamp/data/movies.csv'
     with open(f, 'r') as csvreader:
         reader = csv.reader(csvreader, delimiter=',')
         for row in reader:
