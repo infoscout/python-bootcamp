@@ -606,3 +606,46 @@ def read_movies():
 ```
 
 The reader object  will iterate over lines in the given csvfile
+
+## Organizing Code & Function Calling
+As we reviewed in lecture 1 a function (often interchanged with the word `method` although there are differences between the two) is a block of code that is:
+* Organized
+* Reusable
+* Performs single action
+
+These are not strict rules for writing functions but engineers should keep these characteristics in mind in order to build robust and well maintained code.
+
+Let's walk through a few simple examples that illustrate these principles.
+```
+>>> def print_infoscout():
+...     print "Hello InfoScout"
+>>>
+>>> def print_sf():
+...     print "Hello San Francisco"
+>>>
+>>> def print_address():
+...     print "Hello 322 Ritch Street"
+>>>
+>>>
+>>> print_infoscout()
+Hello InfoScout
+>>> print_sf()
+Hello San Francisco
+>>> print_address
+Hello 322 Ritch Street
+>>>
+```
+Generally speaking these 3 functions are organized and perform a single action however they are not that reusable. Can we make them more abstract to dynamically handle any input string?
+```
+>>> def print_string(s):
+...     print "Hello {s}".format(s=s)
+>>>
+>>> print_string('InfoScout')
+Hello InfoScout
+>>> print_string('San Francisco')
+Hello San Francisco
+>>> print_string('322 Ritch Street')
+Hello 322 Ritch Street
+>>>
+```
+The revised function is now much more powerful because it can be repurposed throughout a large codebase to handle any input string. This is abstraction and one of the core principles of any modern programming language.
